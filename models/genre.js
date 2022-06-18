@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
@@ -14,4 +14,4 @@ GenreSchema
     return '/catalog/genre/' + this._id;
   });
 
-export default mongoose.model('Genre', GenreSchema);
+module.exports = mongoose.model('Genre', GenreSchema);
